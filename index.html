@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.css
+">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.css
+">
+
+</head>
+<style>
+
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .container1{
+        height: 100vh;
+        width: 100%;
+       background-color: #EDF8F4;
+        background-position: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        box-sizing: border-box;
+        position: relative;
+        font-family: 'Roboto', sans-serif;
+    }
+   
+    .navbar{
+        width: 100%;
+        height: 15vh;
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+    .logo{
+        width: 160px;
+        cursor: pointer;
+    }
+
+    nav{
+        flex: 1;
+        
+        text-align: center;
+
+    }
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 0px 30px;
+        
+       
+       
+    }
+    nav ul li:hover{
+       border-bottom:2px solid  #FF8345;
+       
+    }
+    .content h1{
+        font-size: 80px;
+        font-weight: 400;
+        margin-top: 24px;
+        margin-bottom: 15px;
+        color: #2E2E2E;
+        font-family: 'Roboto', sans-serif;
+
+    }
+    .content p{
+        font-size: 25px;
+       
+       
+        color: #696B6A;
+        font-family: 'Roboto', sans-serif;
+
+
+    }
+
+    .content{
+
+        margin-left:auto;
+        margin-top: 5%;
+    }
+
+    
+
+    .arrow-icons{
+        margin-top: 40px;
+        display: flex;
+    }
+    .arrow-icons button{
+        width: 200px;
+        margin-right: 25px;
+        height: 80px;
+        background-color: #48B774;
+        border-radius: 40px;
+        border: 0px;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+    }
+    .navbar button{
+        width: 150px;
+        margin-right: 25px;
+        height: 60px;
+        background-color: #48B774;
+        border-radius: 40px;
+        border: 0px;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+    }
+    .arrow-icons a{
+        width: 200px;
+    
+        height: 80px;
+        border-radius: 40px;
+        border: 0px;
+        color: black;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 30px;
+    }
+   
+
+    .feature-img{
+
+        height: 85vh;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        top: 15vh;
+
+    }
+
+    .container2{
+        width: 100%;
+       background-color:#FCFDFD;
+        background-position: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        box-sizing: border-box;
+        position: relative;
+        font-family: 'Roboto', sans-serif;
+        padding-top: 100px;
+      
+    }
+    .container2 .row .para{
+        color: #77C596;
+        font-size:large ;
+        letter-spacing: 5px;
+    }
+
+    .container2 .row h1{
+        color: black;
+        font-size:50px ;
+        font-weight: bolder;
+    }
+
+    
+
+  .container2 .row .para1{
+      color:#696B6A;
+      font-size: larger;
+      padding-top: 70px;
+      margin-left: 20%;
+      
+      
+  }
+
+  .container2 .card-group{
+      margin-top: 40px;
+  }
+      
+    .container2 .card-group .card{
+      border: 0px;
+        border-radius: 15px;
+        background-color: #FCFDFD;
+        margin-left: 2px;
+        padding: 2%;
+    }
+
+    .container2 .card-group .card:hover{
+      border-radius: 25px;
+      background-color: #FFFFFF;
+      box-shadow: 0 0 5px rgba(0,0,0,.4);
+  }
+
+ 
+
+  .container2 .card-group #midcard{
+    border-radius: 25px;
+      background-color: #FFFFFF;
+      box-shadow: 0 0 5px rgba(0,0,0,.4);
+
+  }
+
+.container2 .card-group .card h3{
+    font-weight: bold;
+}
+  
+  .container2 .card-group .card img{
+
+      height: 80px;
+      border-radius: 15px;
+      margin-bottom: 15px;
+  }
+
+  .container2 .card-group .card p{
+      font-size: large;
+  }
+  .container2 .card-group .card button{
+     margin-top: 20px;
+    width: 150px;
+        margin-right: 25px;
+        height: 60px;
+        background-color: #48B774;
+        border-radius: 40px;
+        border: 0px;
+        color: white !important;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+  }
+  
+.text-muted{
+    color: white !important;
+}
+  
+
+
+
+
+
+
+
+.container3{
+        width: 100%;
+       background-color:#FCFDFD;
+        background-position: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        box-sizing: border-box;
+        position: relative;
+        font-family: 'Roboto', sans-serif;
+        padding-top: 100px;
+      
+    }
+    .container3 .row .para{
+        color: #77C596;
+        font-size:large ;
+        letter-spacing: 5px;
+    }
+
+    .container3 .row h1{
+        color: black;
+        font-size:50px ;
+        font-weight: bolder;
+    }
+
+    
+
+  .container3 .row .para1{
+      color:#696B6A;
+      font-size: larger;
+      padding-top: 90px;
+     float: right;
+      
+      
+  }
+
+  .container3 .card-group{
+      margin-top: 40px;
+      box-shadow: 0px 2px 5px 0px rgba(10, 6, 20, 0.24);
+  }
+
+
+  .container4{
+        width: 100%;
+        margin-right: 20px;
+       background-color:#EDF8F4;
+        background-position: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        box-sizing: border-box;
+        position: relative;
+        font-family: 'Roboto', sans-serif;
+        padding-top: 100px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-bottom: 100px;      
+    }
+
+    
+
+    .container4 .row h1{
+        color: black;
+        font-size:50px ;
+        font-weight: bolder;
+    }
+
+    
+
+    .container4 .row .para{
+        color: #77C596;
+        font-size:large ;
+        letter-spacing: 5px;
+    }
+
+  .container4 .card-group{
+      margin-top: 40px;
+  }
+      
+
+
+ 
+      
+    .container4 .row .col-md-12 .card{
+      border: 0px;
+        border-radius: 15px;
+        background-color: #FCFDFD;
+        margin-left: 2px;
+        padding: 2%;
+
+
+    }
+
+    .container4 .row .col-md-12 .center-item-slider .holder{
+
+margin-right: 40px;
+    }
+    .container4 .row .col-md-12 .center-item-slider .holder .card{
+        width: 38rem;
+        padding: 40px;
+    }
+
+    .para{
+        color: #77C596;
+        font-size:large ;
+        letter-spacing: 5px;
+    }
+
+     #h{
+        color: black;
+        font-size:50px ;
+        font-weight: bolder;
+    }
+
+    .container3 .row .col-md-2 ul{
+
+        list-style: none;
+        line-height: 45px;
+        
+    }
+
+    .container3 .row .col-md-2 ul li a{
+
+        color: #8f8f8f !important;
+
+}
+
+#sm i{
+    padding-right: 10px;
+    letter-spacing: 20px;
+}
+ 
+</style>
+<body>
+    <div class="container1" >
+
+        <div class="navbar">
+            <img src="logo.PNG" class="logo">
+            <nav>
+                <ul>
+                    <li>Why Alies?</li>
+                    <li>Features</li>
+                    <li>Pricing</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+            <button> <i class="fas fa-sign-in-alt"></i>  Login</button>
+        </div>
+
+        <div class="content">
+            <h1><b>Smart Ideas <br> For Your Brand <br> Are Here.</b> </h1>
+            <p>Our motto is to fulfill customer demand by making<br> then satisfied with growing their  business.</p>
+            <div class="arrow-icons">
+                <button>Get Started</button>
+               
+                <a> <i class="far fa-play-circle aa" style="color: #FF8345 !important; border-color: black !important;"></i> Watch Video</a>
+            </div>
+           
+
+        </div>
+
+        <img src="nn.PNG" class="feature-img">
+
+    </div>
+
+    <div class="container2" style="padding-bottom: 30px;">
+        <div class="row ">
+          <div class="col-6">
+           <p class="para">WHAT WE DO</p>
+           <h1>Perfect Solution For <br>Your Business</h1>
+          </div>
+          <div class="col-6">
+            <p class="para1">
+            As our motto. we always provide the best service<br> especially for you and your company by growing <br>
+            your company to be better.
+            </p>
+          </div>
+         
+        </div>
+
+
+        <div class="card-group">
+            <div class="card">
+              <div class="card-body">
+                  <img src="whyus1.PNG"/>
+                <h3 class="card-title">Grow Your Business</h3>
+                <p class="card-text">We always help your company to grow with us .</p>
+            <button class="bt"> <p class="card-text"><small class="text-muted">Lern More <i class="fas fa-arrow-right"></i> </small></p></button>
+              </div>
+            </div>
+            <div class="card" id="midcard">
+              <div class="card-body">
+                <img src="whyus2.PNG"/>
+                <h3 class="card-title">Drive More Sales</h3>
+                <p class="card-text">Every company that we handle We always drive more sales .</p>
+            <button class="bt"><p class="card-text"><small class="text-muted">Lern More <i class="fas fa-arrow-right"></i></small></p></button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <img src="whyus3.PNG"/>
+                <h3 class="card-title">Handled By Expert</h3>
+                <p class="card-text">You don't  need to worry because we are professionals.</p>
+                <button class="bt"><p class="card-text"><small class="text-muted">Lern More <i class="fas fa-arrow-right"></i></small></p></button>
+              </div>
+            </div>
+          </div>
+
+
+
+
+      
+  
+</div>
+
+<div class="container3">
+    <div class="row ">
+      <div class="col-6">
+       <p class="para">OUR WORK</p>
+       <h1>Case Studies Are  <br>Conducted By Our TEAM</h1>
+      </div>
+      <div class="col-6">
+        <p class="para1">
+        Explore all projects <i class="fas fa-arrow-right"></i>
+        </p>
+      </div>
+     
+    </div>
+
+
+
+    <div class="row " style="margin-top: 25px;">
+        <div class="col-6">
+            <img src="ow1.PNG" height="500px" width="100%"/>
+            
+           
+           </div>
+        <div class="col-6">
+            <img src="ow2.PNG" height="300px" width="100%"/>
+            <h3 style="margin-top: 5px; font-weight: bold;">Furniture Landing Page </h3>
+          <p  style="font-size: 20px;">
+         This is a furniture landing page for our clients with a modern and classic theme which is useful for their furniture sales website.
+          </p>
+
+        </div>
+       
+      </div>
+
+
+      
+    <div class="row " >
+        <div class="col-6">
+            
+            
+            <h3 style="margin-top: 20px;">Task Management App </h3>
+         <p>This is a task Management application that can help you be more productive vy scheduling important things that you want to do today.</p>
+      
+         <img src="ow3.PNG" height="375px" width="100%"/>
+
+         <h3 style="margin-top: 5px; font-weight: bold;">Furniture Landing Page </h3>
+          <p  style="font-size: 20px;">
+         This is a furniture landing page for our clients with a modern and classic theme which is useful for their furniture sales website.
+          </p>
+           </div>
+        <div class="col-6">
+            <img src="ow4.PNG"height="500px " width="100%">
+            <h3 style="margin-top: 5px; font-weight: bold;">Furniture Landing Page </h3>
+          <p  style="font-size: 20px;">
+         This is a furniture landing page for our clients with a modern and classic theme which is useful for their furniture sales website.
+          </p>
+
+        </div>
+       
+      </div>
+</div>
+
+<div class="container4" >
+<div class="row " >
+    <div class="col-6">
+        <p class=" para"> TESTIMONIAL</p>
+        <h1> What Our Customer <br>Say About Us</h1>
+    </div>
+    <div class="col-6">
+       
+    
+    </div>
+</div>
+
+
+<div class="row" style="margin-top: 40px; ">
+    <div class="col-md-12">
+         <div class="center-item-slider">
+           <div class="holder center">
+
+            <div class="card" style="font-size: 20px;">
+                <div class="card-body">
+                <img src="cmt.PNG"/>
+                <br>
+                <p class="card-text" >Iam trusted my company in allies and the results have been satisfying because my company has growing.</p>
+                  <div style="display: flex;">
+                <img src="https://images.unsplash.com/photo-1521225099409-8e1efc95321d?ixlib=rb-1.2.1&auto=format&fit=crop&h=153&q=80"  style="display:flex;border-radius: 100%;width:50px;height:50px;"alt="">
+                <span style="    margin-left: 15px;
+                width: 150px;">Web Developer Developer </span> 
+
+                </div> 
+                <div class="stars" style="margin-top: 20px; color:#ffd832">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"  style="color:grey"></i>
+                </div>
+              
+              </div>
+              </div>
+           </div>
+           <div class="holder center">
+               
+            <div class="card" style="font-size: 20px;">
+                <div class="card-body">
+                  <img src="cmt.PNG"/>
+                  <br>
+                  <p class="card-text" >Iam very fortunate to trust my company to allies and now my computer income is increasing</p>
+                    <div style="display: flex;">
+                  <img src="https://images.unsplash.com/photo-1521225099409-8e1efc95321d?ixlib=rb-1.2.1&auto=format&fit=crop&h=153&q=80"  style="display:flex;border-radius: 100%;width:50px;height:50px;"alt="">
+                  <span style="    margin-left: 15px;
+                  width: 150px;">Web Developer Developer </span> 
+
+                  </div> 
+                  <div class="stars" style="margin-top: 20px; color:#ffd832">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"  style="color:grey"></i>
+                    <i class="fa fa-star" style="color:grey"></i>
+                  </div>
+                 
+                </div>
+              </div>
+           </div>
+           
+           <div class="holder center">
+
+            <div class="card" style="font-size: 20px;">
+                <div class="card-body">
+                <img src="cmt.PNG"/>
+                <br>
+                <p class="card-text" >Iam trusted my company in allies and the results have been satisfying because my company has growing.</p>
+                  <div style="display: flex;">
+                <img src="https://images.unsplash.com/photo-1521225099409-8e1efc95321d?ixlib=rb-1.2.1&auto=format&fit=crop&h=153&q=80"  style="display:flex;border-radius: 100%;width:50px;height:50px;"alt="">
+                <span style="    margin-left: 15px;
+                width: 150px;">Web Developer Developer </span> 
+
+                </div> 
+                <div class="stars" style="margin-top: 20px; color:#ffd832">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star" style="color:grey"></i>
+                </div>
+              
+              </div>
+              </div>
+           </div>
+         </div>
+      </div>
+    </div>
+
+</div>
+
+
+
+
+<div class="container2" style="text-align: center; background-color: #FCFDFD; padding-bottom: 30px;">
+
+    <div class="col-12" >
+        <p class="para">OUR SUBSCRIBE</p>
+        <h1 id="h">Subscribe To Get The Latest <br>News About Us</h1><br>
+        <p style="color: #686666; font-size: 20px;">We recommended you to subscribe to our newspaper , drop your <br> email below to get daily update from us.</p>
+        <center>
+            <style>
+                input:focus{
+                    border:0px;
+                }
+            </style>
+        <div style="box-shadow: 0px 2px 5px 0px rgba(10, 6, 20, 0.24);height: 60px;width: 600px;background-color: white; border-radius: 25px; margin-top: 30px; padding: 0px;"> <input style="margin-left: 30px; border: 0px;border-radius: 25px; height: 100%;width: 70%;" type= "email"placeholder="Enter Your  Email Address"/><button style= "  width: 100px;
+            
+            height: 80%;
+            background-color: #48B774;
+            border-radius: 40px;
+            border: 0px;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-size: 15px;">Subscribe</button></div>
+    </center>
+        
+    </div>
+</div>
+
+
+<footer id="cu">
+    <div class="foot-det">
+        
+    
+     <div class="container3">
+         <div class="row">
+             <div class="col-md-4">
+                 <div class="foot-about">
+                     <img src="footerlogo.PNG"/>
+                     <p style="margin-top: 15px;color: #8f8f8f;">Our motto is to fullfill customer<br> demand by making them satisfied<br> with growing business.</p>
+                    
+                 </div>
+             </div>
+             <div class="col-md-2 menu-foot" >
+                 <h4>About</h4>
+                 <ul>
+                     <li><a href="#au">About Us</a></li>
+                     <li><a href="login.php">Features</a></li>
+                     <li><a href="signup.php">News</a></li>
+                     <li><a href="login.php">Careers</a></li>
+                    
+                 </ul>
+                 
+             </div>
+             <div class="col-md-2 menu-foot">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="index.php">Our Team</a></li>
+                    <li><a href="#au">Partners With Us</a></li>
+                    <li><a href="login.php">FAQ</a></li>
+                    <li><a href="signup.php">Blog</a></li>
+                   
+                </ul>
+                
+            </div>
+            <div class="col-md-2 menu-foot">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="index.php">Account</a></li>
+                    <li><a href="#au">Support Center</a></li>
+                    <li><a href="login.php">Feedback</a></li>
+                    <li><a href="signup.php">Contact Us</a></li>
+                    <li><a href="login.php">Accesbility</a></li>
+                   
+                </ul>
+                
+            </div>
+             
+             <div class="col-md-2 cont-foot" style="color:#8f8f8f;">
+                 <h4 style="color: black;">Get n Touch</h4>
+                 <p>    Questions or Feedback?</p>
+                 <p>We'd love to hear from you</p>
+             </div>
+         </div>
+     </div>
+   
+     </div>
+
+     <div style="height: 60px; width: 100%; padding-right:10%;color: white ; padding-left: 10%; padding-top: 20px ;background-color: #48B774;">
+    Copyright Allies 2020. All right reserved
+
+    <span style="display: inline-flex; float: right;" id="sm">
+        <i  class="fab fa-instagram-square"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-linkedin-in"></i>
+        <i class="fab fa-youtube"></i>
+    </span>
+    </div>
+ </footer>
+    
+
+
+    
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"> </script>
+    <script>
+        $(document).ready(function(){
+
+            $('.center-item-slider').slick({
+    centerMode: true,
+    centerPadding: '0px',
+    autoplay: true,
+    autoplaySpeed: 4000,
+    slidesToShow: 2,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+        });
+        </script>
+
+</body>
+</html>
